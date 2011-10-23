@@ -1,0 +1,10 @@
+#! /usr/bin/env node
+var Webhook = require('../lib/web-hook2').Webhook;
+
+var webhookServer = new Webhook({
+  name: 'webhook-server',
+  port: 9001,
+  debug: true
+});
+
+webhookServer.start();
